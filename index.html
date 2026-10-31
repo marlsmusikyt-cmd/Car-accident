@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Accident</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>CAR ACCIDENT <br> by MarlsTV (marlsmusikyt-cmd)</h1>
+            <div class="stats">
+                <span>SCORE: <span id="score">0</span></span>
+                <span>BEST: <span id="best">0</span></span>
+            </div>
+        </header>
+
+        <div class="game-wrapper">
+
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+            <div id="gameOver" class="game-over hidden">
+                <h2>CRASH!</h2>
+                <p>Your car has been destroyed.</p>
+                <p>Score: <span id="finalScore">0</span></p>
+                <button id="restartButton">TRY AGAIN</button>
+            </div>
+
+            <div id="startScreen" class="start-screen">
+                <h2>CAR ACCIDENT</h2>
+                <p>Dodge the traffic.</p>
+                <button id="startButton">START GAME</button>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <label for="steering">STEERING</label>
+            <input type="range" id="steering" min="0" max="100" value="50">
+            <div class="control-labels">
+                <span>LEFT</span>
+                <span>RIGHT</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
